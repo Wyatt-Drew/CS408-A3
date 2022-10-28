@@ -28,6 +28,7 @@ public class CreateSpline : MonoBehaviour
     {
         Application.targetFrameRate = 60; // lock framerate to 60
         spawnControlPoints();
+        //Creative Feature
         //Spawn in title and instructions
         GameObject title = Instantiate(Resources.Load("TitleAndInstructions", typeof(GameObject))) as GameObject;
         title.transform.position = new Vector3(0f, 0f, 0f);
@@ -158,19 +159,19 @@ public class CreateSpline : MonoBehaviour
                 case 'b'://default mode
                     {
                         moveMode = linear;
-                        easeStyle.text = "Linear Movement";
+                        easeStyle.text = "Linear Movement"; //Creative Feature
                         break;
                     }
                 case 'c'://sine mode
                     {
                         moveMode = sine;
-                        easeStyle.text = "Sinusoidal Ease-in / Ease-out";
+                        easeStyle.text = "Sinusoidal Ease-in / Ease-out"; //Creative Feature
                         break;
                     }
                 case 'd'://parabolic mode
                     {
                         moveMode = parabolic;
-                        easeStyle.text = "Parabolic Ease-in / Ease-out";
+                        easeStyle.text = "Parabolic Ease-in / Ease-out"; //Creative Feature
                         break;
                     }
             }
@@ -220,22 +221,18 @@ public class CreateSpline : MonoBehaviour
         float t = (float)((Time.realtimeSinceStartupAsDouble - startTime) / 5f) % 1f;
         float k1 = 1f / 6f;
         float k2 = 5f / 6f;
-        float f, s;
-        f = (k1 * 2f / Mathf.PI) + k2 - k1 + ((1.0f - k2) * 2f / Mathf.PI);
+        float v0 = 2f / (k2 - k1 + 1f);
         if (t < k1)
         {
-            s = k1 * (2f / Mathf.PI) * (Mathf.Sin((t / k1) * Mathf.PI / 2f - Mathf.PI / 2f) + 1f);
+            progress = v0 * t * t / (2 * k1);
         }
         else if (t < k2)
         {
-            s = (2f * k1 / Mathf.PI + t - k1);
+            progress = (v0 * k1 / 2f) + (v0 * (t - k1));
         }
         else
         {
-            s = 2f * k1 / Mathf.PI + k2 - k1 + ((1f - k2) * (2f / Mathf.PI)) * Mathf.Sin(((t - k2) / (1.0f - k2)) * Mathf.PI / 2f);
+            progress = (v0 * k1 / 2f) + (v0 * (k2 - k1)) + ((v0 - ((v0 * (t - k2) / (1f - k2)) / 2f)) * (t - k2));
         }
-        progress = s / f;
-
     }
-
 }
