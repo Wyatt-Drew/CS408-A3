@@ -688,6 +688,8 @@ struct List_1_t7C8CC805CEADA09DFAC2AC1A5D731D5EE956F6DC;
 struct List_1_t737146299DEBBD1D6BD15CA9BBC3A4F80931C59E;
 // System.Collections.Generic.List`1<UnityEngine.UIElements.StyleSheets.SelectorMatchRecord>
 struct List_1_tA1D3D4FCA4CFF8E02845F48D747A4C704D4C9CAE;
+// System.Collections.Generic.List`1<System.Single>
+struct List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918;
 // System.Collections.Generic.List`1<UnityEngine.TextCore.Text.SpriteAsset>
 struct List_1_t3EE59C28A34FCD5060EF6B6BAFA85F2C9D01D320;
 // System.Collections.Generic.List`1<UnityEngine.TextCore.Text.SpriteCharacter>
@@ -45322,28 +45324,36 @@ struct CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC  : public MonoBeha
 {
 	// UnityEngine.Transform CreateSpline::sphere
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___sphere_4;
-	// System.Single CreateSpline::progress
-	float ___progress_5;
-	// System.Int32 CreateSpline::size
-	int32_t ___size_6;
-	// UnityEngine.GameObject[] CreateSpline::controlPoints
-	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___controlPoints_7;
-	// UnityEngine.GameObject CreateSpline::tempObject
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___tempObject_8;
-	// System.Boolean CreateSpline::drawLine
-	bool ___drawLine_9;
-	// System.Boolean CreateSpline::isLoaded
-	bool ___isLoaded_10;
-	// System.Double CreateSpline::startTime
-	double ___startTime_11;
 	// System.Int32 CreateSpline::moveMode
-	int32_t ___moveMode_15;
+	int32_t ___moveMode_8;
+	// TMPro.TextMeshPro CreateSpline::easeStyle
+	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___easeStyle_9;
+	// System.Single CreateSpline::progress
+	float ___progress_10;
+	// System.Single CreateSpline::prevProgress
+	float ___prevProgress_11;
+	// System.Double CreateSpline::startTime
+	double ___startTime_12;
+	// System.Boolean CreateSpline::isLoaded
+	bool ___isLoaded_13;
+	// System.Int32 CreateSpline::size
+	int32_t ___size_14;
+	// UnityEngine.GameObject[] CreateSpline::controlPoints
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___controlPoints_15;
 	// System.Collections.Generic.List`1<UnityEngine.Transform> CreateSpline::points
 	List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* ___points_16;
 	// UnityEngine.Vector3[] CreateSpline::splineCurve
 	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___splineCurve_19;
-	// TMPro.TextMeshPro CreateSpline::easeStyle
-	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___easeStyle_20;
+	// System.Collections.Generic.List`1<System.Single> CreateSpline::cumulativeLength
+	List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* ___cumulativeLength_20;
+	// System.Collections.Generic.List`1<System.Single> CreateSpline::segLength
+	List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* ___segLength_21;
+	// System.Single CreateSpline::u
+	float ___u_22;
+	// UnityEngine.GameObject CreateSpline::tempObject
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___tempObject_23;
+	// System.Boolean CreateSpline::drawLine
+	bool ___drawLine_24;
 };
 
 // UnityEngine.UIElements.DropdownField
@@ -54569,21 +54579,21 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize3395 = { sizeof(U3CModuleU3E
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3396;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3396 = { sizeof(SpriteShapeRenderer_tE998BB73CF661079736CCC23617E597AB230A4AC), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3397;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3397 = { sizeof(U3CModuleU3E_t90149EF90407715CC46EB5A9704669888393F1DE), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3397 = { sizeof(U3CModuleU3E_tBB65183F1134474D09FF49B95625D25472B9BA8B), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3398;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3398 = { sizeof(ASN1_t33549D58797C9C33AA83F13AD184EAA00C584A6F), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3398 = { sizeof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3399;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3399 = { sizeof(ASN1Convert_tDA6D2B7710D7868F3D559D5BE7F2C7816BB50AB6), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3399 = { sizeof(lineController_t6E443CBA05B5A2B831043A37BB1E6A39F5237435), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3400;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3400 = { sizeof(BitConverterLE_tB6EF365ED05024FCC12DA3939B10FDEBDB29E1BD), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3400 = { sizeof(U3CModuleU3E_t90149EF90407715CC46EB5A9704669888393F1DE), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3401;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3401 = { sizeof(CryptoConvert_t676AC22DA6332E9936696ECC97197AB7B1BC7252), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3401 = { sizeof(ASN1_t33549D58797C9C33AA83F13AD184EAA00C584A6F), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3402;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3402 = { sizeof(U3CModuleU3E_tBB65183F1134474D09FF49B95625D25472B9BA8B), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3402 = { sizeof(ASN1Convert_tDA6D2B7710D7868F3D559D5BE7F2C7816BB50AB6), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3403;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3403 = { sizeof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3403 = { sizeof(BitConverterLE_tB6EF365ED05024FCC12DA3939B10FDEBDB29E1BD), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3404;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3404 = { sizeof(lineController_t6E443CBA05B5A2B831043A37BB1E6A39F5237435), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3404 = { sizeof(CryptoConvert_t676AC22DA6332E9936696ECC97197AB7B1BC7252), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3405;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3405 = { sizeof(U3CModuleU3E_t4791F64F4B6411D4D033A002CAD365D597AA2451), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3406;

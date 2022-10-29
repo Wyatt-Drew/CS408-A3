@@ -7,23 +7,32 @@ public class CreateSpline : MonoBehaviour
 {
     [SerializeField] private Transform sphere;
 
-    private float progress = 0f;
-    //private float speed = 1f;
-    private int size = 11;
-    GameObject[] controlPoints = new GameObject[11];
-    public GameObject tempObject;
-    private bool drawLine = true;
-    private bool isLoaded = false;
-    private double startTime;
+    //Move mode constants
     const int linear = 1;
     const int sine = 2;
     const int parabolic = 3;
-    private int moveMode = 1;
+    //Global variables
+    private int moveMode = 1;       //Dictates which type of movement we use
+    public TextMeshPro easeStyle;  // Contains text for movement
+    //Time
+    private float progress = 0f;
+    public float prevProgress = 0f;
+    private double startTime;
+    private bool isLoaded = false;  //For recording start time
+    //Spline curve parameters
+    private int size = 11;      //The number of control points we will spawn in
+    GameObject[] controlPoints = new GameObject[11];
     public List<Transform> points = new List<Transform>();
     public const int pointNum = 50;
     public const int maxSteps = 100;
     Vector3[] splineCurve;
-    public TextMeshPro easeStyle;
+    public List<float> cumulativeLength = new List<float>();
+    public List<float> segLength = new List<float>();
+    public float u;
+    //Misc
+    public GameObject tempObject;
+    private bool drawLine = true;
+
     void Start()
     {
         Application.targetFrameRate = 60; // lock framerate to 60
@@ -52,6 +61,7 @@ public class CreateSpline : MonoBehaviour
             GameObject instance = Instantiate(Resources.Load("LineRend", typeof(GameObject))) as GameObject;
             instance.transform.position = GameObject.Find("/LineRend").transform.position;
         }
+        CalcArchLength();
     }
     //Purpose: To spawn in the control points.  
     void spawnControlPoints()
@@ -82,6 +92,19 @@ public class CreateSpline : MonoBehaviour
         GameObject current = new GameObject();
         current.transform.position = sphere.position;
         points.Add(current.transform);
+    }
+    //Purpose: This calculates the arch length and cumulative arch length for every point along the B-Spline
+    void CalcArchLength()
+    {
+        segLength.Add(0f);
+        cumulativeLength.Add(0f);
+        for (int i = 1; i < maxSteps * (size - 3); i++)
+        {
+            float x = splineCurve[i].x - splineCurve[i-1].x;
+            float y = splineCurve[i].y - splineCurve[i-1].y;
+            segLength.Add(Mathf.Sqrt((x * x) + (y * y)));
+            cumulativeLength.Add(segLength[i] + cumulativeLength[i - 1]);
+        }
     }
     //Purpose: Calculate the entire path of the spline and store it for later use
     void calculateSpline()
@@ -129,6 +152,7 @@ public class CreateSpline : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         //Save time of start up to ensure animation plays from the start
         if (isLoaded == false) 
         {
@@ -149,6 +173,10 @@ public class CreateSpline : MonoBehaviour
                 break;
         }
         move();
+        //Debug function to prove the animation is 5 seconds long in all modes.
+        if (prevProgress > progress)
+            Debug.Log(Time.frameCount);
+        prevProgress = progress;
     }
     void getInput()
     {
@@ -177,16 +205,39 @@ public class CreateSpline : MonoBehaviour
             }
         }
     }
+    
+
     //Purpose:  Convert progress (float) to an integer which represents how far through the animation we are.
     //Progress has a range from 0 to 1.  This int has a range of each value calculated in calculateSpline
     int getFrame()
     {
-        return (int)(progress * (maxSteps * ((float)(size - 3))));
+        float curDistance = progress * cumulativeLength[cumulativeLength.Count - 1];
+        for (int i = 0; i < maxSteps * (size - 3) + 1; i++)
+        {
+            if (curDistance == cumulativeLength[i])
+            {
+                u = 0f; //extactly matches a point
+                return i;
+                //it can never be beyond the last point so we are safe from core dumps on the next line.
+            }else if (curDistance > cumulativeLength[i] && curDistance < cumulativeLength[i + 1]) 
+            {
+                u = (curDistance- cumulativeLength[i]) /(cumulativeLength[i+1]- cumulativeLength[i]); //step Distance traveled/total step distance
+                return i;
+            }
+        }
+        Debug.Log("error");
+        return 0;  //This will never happen
     }
     //Purpose: Move the sphere depending on progress
     void move()
     {
-        sphere.position = splineCurve[getFrame()];
+        int i = getFrame();
+        if (u == 0f) //prevents the theoretical core dump that we are on the very last step (no i+1).
+        {
+            sphere.position = splineCurve[i];
+            return;
+        }
+        sphere.position = splineCurve[i] + (u * (splineCurve[i + 1] - splineCurve[i])); //Last step value + interpolation amount
     }
 
     //All progress functions
@@ -221,7 +272,8 @@ public class CreateSpline : MonoBehaviour
         float t = (float)((Time.realtimeSinceStartupAsDouble - startTime) / 5f) % 1f;
         float k1 = 1f / 6f;
         float k2 = 5f / 6f;
-        float v0 = 2f / (k2 - k1 + 1f);
+        //float v0 = 2f / (k2 - k1 + 1f);
+        float v0 = 1f / ((k1 / 2f) + (k2 - k1) + ((1f - k2) / 2f));
         if (t < k1)
         {
             progress = v0 * t * t / (2 * k1);

@@ -550,6 +550,7 @@ UnityEngine.Texture2DArray::get_isReadable
 UnityEngine.Texture3D::Internal_CreateImpl
 UnityEngine.Texture3D::get_isReadable
 UnityEngine.Time::get_realtimeSinceStartupAsDouble
+UnityEngine.Time::get_frameCount
 UnityEngine.Time::get_deltaTime
 UnityEngine.Time::get_realtimeSinceStartup
 UnityEngine.Time::get_unscaledDeltaTime

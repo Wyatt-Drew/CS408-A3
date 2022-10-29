@@ -116,6 +116,8 @@ struct List_1_t14E7CB3A94AB27255C94FB29406F34FD0D2EFBD8;
 struct List_1_tEE9D21067B06E9376583F5A60FB5D70AF940EE39;
 // System.Collections.Generic.List`1<UnityEngine.Rigidbody2D>
 struct List_1_tCD5F926D25FC8BFAF39E4BE6F879C1FA11501C76;
+// System.Collections.Generic.List`1<System.Single>
+struct List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918;
 // System.Collections.Generic.List`1<UnityEngine.TextCore.Text.SpriteAsset>
 struct List_1_t3EE59C28A34FCD5060EF6B6BAFA85F2C9D01D320;
 // System.Collections.Generic.List`1<UnityEngine.TextCore.Text.SpriteCharacter>
@@ -5835,28 +5837,36 @@ struct CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC  : public MonoBeha
 {
 	// UnityEngine.Transform CreateSpline::sphere
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___sphere_4;
-	// System.Single CreateSpline::progress
-	float ___progress_5;
-	// System.Int32 CreateSpline::size
-	int32_t ___size_6;
-	// UnityEngine.GameObject[] CreateSpline::controlPoints
-	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___controlPoints_7;
-	// UnityEngine.GameObject CreateSpline::tempObject
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___tempObject_8;
-	// System.Boolean CreateSpline::drawLine
-	bool ___drawLine_9;
-	// System.Boolean CreateSpline::isLoaded
-	bool ___isLoaded_10;
-	// System.Double CreateSpline::startTime
-	double ___startTime_11;
 	// System.Int32 CreateSpline::moveMode
-	int32_t ___moveMode_15;
+	int32_t ___moveMode_8;
+	// TMPro.TextMeshPro CreateSpline::easeStyle
+	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___easeStyle_9;
+	// System.Single CreateSpline::progress
+	float ___progress_10;
+	// System.Single CreateSpline::prevProgress
+	float ___prevProgress_11;
+	// System.Double CreateSpline::startTime
+	double ___startTime_12;
+	// System.Boolean CreateSpline::isLoaded
+	bool ___isLoaded_13;
+	// System.Int32 CreateSpline::size
+	int32_t ___size_14;
+	// UnityEngine.GameObject[] CreateSpline::controlPoints
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___controlPoints_15;
 	// System.Collections.Generic.List`1<UnityEngine.Transform> CreateSpline::points
 	List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* ___points_16;
 	// UnityEngine.Vector3[] CreateSpline::splineCurve
 	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___splineCurve_19;
-	// TMPro.TextMeshPro CreateSpline::easeStyle
-	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___easeStyle_20;
+	// System.Collections.Generic.List`1<System.Single> CreateSpline::cumulativeLength
+	List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* ___cumulativeLength_20;
+	// System.Collections.Generic.List`1<System.Single> CreateSpline::segLength
+	List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* ___segLength_21;
+	// System.Single CreateSpline::u
+	float ___u_22;
+	// UnityEngine.GameObject CreateSpline::tempObject
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___tempObject_23;
+	// System.Boolean CreateSpline::drawLine
+	bool ___drawLine_24;
 };
 
 // lineController
@@ -6688,15 +6698,15 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3386[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3387[6] = 
 {
 	static_cast<int32_t>(offsetof(RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA, ___m_Centroid_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA, ___m_Point_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA, ___m_Normal_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA, ___m_Distance_3)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA, ___m_Fraction_4)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA, ___m_Collider_5)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3398[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3398[21] = 
 {
-	static_cast<int32_t>(offsetof(ASN1_t33549D58797C9C33AA83F13AD184EAA00C584A6F, ___m_nTag_0)),static_cast<int32_t>(offsetof(ASN1_t33549D58797C9C33AA83F13AD184EAA00C584A6F, ___m_aValue_1)),static_cast<int32_t>(offsetof(ASN1_t33549D58797C9C33AA83F13AD184EAA00C584A6F, ___elist_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3403[17] = 
-{
-	static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___sphere_4)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___progress_5)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___size_6)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___controlPoints_7)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___tempObject_8)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___drawLine_9)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___isLoaded_10)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___startTime_11)),0,0,0,static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___moveMode_15)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___points_16)),0,0,static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___splineCurve_19)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___easeStyle_20)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3404[2] = 
+	static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___sphere_4)),0,0,0,static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___moveMode_8)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___easeStyle_9)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___progress_10)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___prevProgress_11)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___startTime_12)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___isLoaded_13)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___size_14)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___controlPoints_15)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___points_16)),0,0,static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___splineCurve_19)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___cumulativeLength_20)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___segLength_21)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___u_22)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___tempObject_23)),static_cast<int32_t>(offsetof(CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC, ___drawLine_24)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3399[2] = 
 {
 	static_cast<int32_t>(offsetof(lineController_t6E443CBA05B5A2B831043A37BB1E6A39F5237435, ___lr_4)),static_cast<int32_t>(offsetof(lineController_t6E443CBA05B5A2B831043A37BB1E6A39F5237435, ___line_5)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3401[3] = 
+{
+	static_cast<int32_t>(offsetof(ASN1_t33549D58797C9C33AA83F13AD184EAA00C584A6F, ___m_nTag_0)),static_cast<int32_t>(offsetof(ASN1_t33549D58797C9C33AA83F13AD184EAA00C584A6F, ___m_aValue_1)),static_cast<int32_t>(offsetof(ASN1_t33549D58797C9C33AA83F13AD184EAA00C584A6F, ___elist_2)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3406[3] = 
 {
 	static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___IsTextualNodeBitmap_0)),static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___CanReadContentAsBitmap_1)),static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___HasValueBitmap_2)),};

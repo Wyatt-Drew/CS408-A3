@@ -2530,6 +2530,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Time_get_realtimeSinceStartupAsDouble();
 		Register_UnityEngine_Time_get_realtimeSinceStartupAsDouble();
 
+		//System.Int32 UnityEngine.Time::get_frameCount()
+		void Register_UnityEngine_Time_get_frameCount();
+		Register_UnityEngine_Time_get_frameCount();
+
 		//System.Single UnityEngine.Time::get_deltaTime()
 		void Register_UnityEngine_Time_get_deltaTime();
 		Register_UnityEngine_Time_get_deltaTime();

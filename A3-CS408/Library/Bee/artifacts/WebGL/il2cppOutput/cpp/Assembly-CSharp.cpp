@@ -33,6 +33,8 @@ struct Func_3_tC721DF8CDD07ED66A4833A19A2ED2302608C906C;
 struct Func_3_t6F6D9932638EA1A5A45303C6626C818C25D164E5;
 // System.Collections.Generic.List`1<System.Object>
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
+// System.Collections.Generic.List`1<System.Single>
+struct List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918;
 // System.Collections.Generic.List`1<UnityEngine.Transform>
 struct List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D;
 // UnityEngine.UI.CoroutineTween.TweenRunner`1<UnityEngine.UI.CoroutineTween.ColorTween>
@@ -162,8 +164,11 @@ struct lineController_t6E443CBA05B5A2B831043A37BB1E6A39F5237435;
 // UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
 
+IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var;
@@ -177,17 +182,23 @@ IL2CPP_EXTERN_C String_t* _stringLiteral7F3C75071EE96D70D0FFD075D01CE5812AFBC30F
 IL2CPP_EXTERN_C String_t* _stringLiteralBE9DF25093CB60963459886D2A4EBEE004C41376;
 IL2CPP_EXTERN_C String_t* _stringLiteralE2724FDF4ED4A1A252453B717BC160A952CBE9C2;
 IL2CPP_EXTERN_C String_t* _stringLiteralFC87B1DC243CD82DFAD6D48170E49E45E5EFAD12;
+IL2CPP_EXTERN_C String_t* _stringLiteralFCA74A9060DDEE6A3ECAE73E6AB96086770BE7E2;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisLineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D_mE703918F1B04E115CCE78A5FF891A12648B04D75_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_m788ADD6C98FD3A1039F72A865AB7D335AEA6116F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m36829EC89855C8C23CEDA8C5F5B12B76ADFE2248_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_ToArray_m5925CCD2844741E30EB14EDD03DD79F169BBFA80_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mDC3E95DC5C927A867B9B42EDE1945F909B894268_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m545762F67009314D9C63DD209B42FFF950569B05_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_FindObjectOfType_TislineController_t6E443CBA05B5A2B831043A37BB1E6A39F5237435_m1530BF6862EFD28D6E4B632CEDF34E6D14B1B76B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeType* GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_0_0_0_var;
 
 struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
 struct TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24;
 struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C;
 
@@ -222,6 +233,25 @@ struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
 {
 	// T[] System.Collections.Generic.List`1::s_emptyArray
 	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<System.Single>
+struct List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___s_emptyArray_5;
 };
 
 // System.Collections.Generic.List`1<UnityEngine.Transform>
@@ -1341,28 +1371,36 @@ struct CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC  : public MonoBeha
 {
 	// UnityEngine.Transform CreateSpline::sphere
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___sphere_4;
-	// System.Single CreateSpline::progress
-	float ___progress_5;
-	// System.Int32 CreateSpline::size
-	int32_t ___size_6;
-	// UnityEngine.GameObject[] CreateSpline::controlPoints
-	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___controlPoints_7;
-	// UnityEngine.GameObject CreateSpline::tempObject
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___tempObject_8;
-	// System.Boolean CreateSpline::drawLine
-	bool ___drawLine_9;
-	// System.Boolean CreateSpline::isLoaded
-	bool ___isLoaded_10;
-	// System.Double CreateSpline::startTime
-	double ___startTime_11;
 	// System.Int32 CreateSpline::moveMode
-	int32_t ___moveMode_15;
+	int32_t ___moveMode_8;
+	// TMPro.TextMeshPro CreateSpline::easeStyle
+	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___easeStyle_9;
+	// System.Single CreateSpline::progress
+	float ___progress_10;
+	// System.Single CreateSpline::prevProgress
+	float ___prevProgress_11;
+	// System.Double CreateSpline::startTime
+	double ___startTime_12;
+	// System.Boolean CreateSpline::isLoaded
+	bool ___isLoaded_13;
+	// System.Int32 CreateSpline::size
+	int32_t ___size_14;
+	// UnityEngine.GameObject[] CreateSpline::controlPoints
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___controlPoints_15;
 	// System.Collections.Generic.List`1<UnityEngine.Transform> CreateSpline::points
 	List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* ___points_16;
 	// UnityEngine.Vector3[] CreateSpline::splineCurve
 	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___splineCurve_19;
-	// TMPro.TextMeshPro CreateSpline::easeStyle
-	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___easeStyle_20;
+	// System.Collections.Generic.List`1<System.Single> CreateSpline::cumulativeLength
+	List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* ___cumulativeLength_20;
+	// System.Collections.Generic.List`1<System.Single> CreateSpline::segLength
+	List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* ___segLength_21;
+	// System.Single CreateSpline::u
+	float ___u_22;
+	// UnityEngine.GameObject CreateSpline::tempObject
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___tempObject_23;
+	// System.Boolean CreateSpline::drawLine
+	bool ___drawLine_24;
 };
 
 // UnityEngine.EventSystems.UIBehaviour
@@ -2147,6 +2185,39 @@ struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeA
 		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
+// System.Single[]
+struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C  : public RuntimeArray
+{
+	ALIGN_FIELD (8) float m_Items[1];
+
+	inline float GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline float* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, float value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline float GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline float* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, float value)
+	{
+		m_Items[index] = value;
+	}
+};
 
 
 // T UnityEngine.GameObject::GetComponent<System.Object>()
@@ -2159,8 +2230,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_FindObjectOfType_TisRun
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeObject_m249A6BA4F2F19C2D3CE217D4D31847DF0EF03EFE_gshared (RuntimeObject* ___original0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position1, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___rotation2, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::Add(T)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Single>::Add(T)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_gshared_inline (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, float ___item0, const RuntimeMethod* method) ;
+// T System.Collections.Generic.List`1<System.Single>::get_Item(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_gshared (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, int32_t ___index0, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.List`1<System.Single>::get_Count()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m545762F67009314D9C63DD209B42FFF950569B05_gshared_inline (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Single>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802_gshared (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, const RuntimeMethod* method) ;
 
 // System.Void UnityEngine.Application::set_targetFrameRate(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_set_targetFrameRate_mB90EEA60DAE55CD71C38D4B7DFDBE2B34EA6B46F (int32_t ___value0, const RuntimeMethod* method) ;
@@ -2203,6 +2282,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void lineController_drawLine_mFF691C0F1DA2325
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* GameObject_Find_m7A669B4EEC2617AB82F6E3FF007CDCD9F21DB300 (String_t* ___name0, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Transform::get_position()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+// System.Void CreateSpline::CalcArchLength()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateSpline_CalcArchLength_m253046C4BF9676E9DC09D3C38121C7D6E19F1075 (CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC* __this, const RuntimeMethod* method) ;
 // UnityEngine.Quaternion UnityEngine.Quaternion::get_identity()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) ;
 // T UnityEngine.Object::Instantiate<UnityEngine.GameObject>(T,UnityEngine.Vector3,UnityEngine.Quaternion)
@@ -2216,6 +2297,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject__ctor_m7D0340DE160786E6EFA8DA
 inline void List_1_Add_m36829EC89855C8C23CEDA8C5F5B12B76ADFE2248_inline (List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___item0, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+}
+// System.Void System.Collections.Generic.List`1<System.Single>::Add(T)
+inline void List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_inline (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, float ___item0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918*, float, const RuntimeMethod*))List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_gshared_inline)(__this, ___item0, method);
+}
+// T System.Collections.Generic.List`1<System.Single>::get_Item(System.Int32)
+inline float List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50 (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, int32_t ___index0, const RuntimeMethod* method)
+{
+	return ((  float (*) (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918*, int32_t, const RuntimeMethod*))List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_gshared)(__this, ___index0, method);
 }
 // System.Single CreateSpline::B0(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CreateSpline_B0_mE0F2E87FB97465631222563CFC4D64F4A9F2E670 (CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC* __this, float ___u0, const RuntimeMethod* method) ;
@@ -2237,18 +2328,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateSpline_sineProgress_m4F5814D697B41
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateSpline_parabolicProgress_mA16B4CF0628B584798F3FE8D9E074ECDD444122B (CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC* __this, const RuntimeMethod* method) ;
 // System.Void CreateSpline::move()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateSpline_move_mEE6BC457E43E78187EC076A602BEB3A2410E5482 (CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC* __this, const RuntimeMethod* method) ;
+// System.Int32 UnityEngine.Time::get_frameCount()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Time_get_frameCount_m4A42E558A71301A216BDC49EC402D62F19C79667 (const RuntimeMethod* method) ;
+// System.Void UnityEngine.Debug::Log(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___message0, const RuntimeMethod* method) ;
 // System.String UnityEngine.Input::get_inputString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Input_get_inputString_mB022DED50E8838B8319C591830BEB21E4904561B (const RuntimeMethod* method) ;
 // System.Char System.String::get_Chars(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppChar String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3 (String_t* __this, int32_t ___index0, const RuntimeMethod* method) ;
 // System.Int32 System.String::get_Length()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline (String_t* __this, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.List`1<System.Single>::get_Count()
+inline int32_t List_1_get_Count_m545762F67009314D9C63DD209B42FFF950569B05_inline (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918*, const RuntimeMethod*))List_1_get_Count_m545762F67009314D9C63DD209B42FFF950569B05_gshared_inline)(__this, method);
+}
 // System.Int32 CreateSpline::getFrame()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CreateSpline_getFrame_m532DDD28CA049420EA7707A5273866731599CC7B (CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC* __this, const RuntimeMethod* method) ;
+// UnityEngine.Vector3 UnityEngine.Vector3::op_Subtraction(UnityEngine.Vector3,UnityEngine.Vector3)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, const RuntimeMethod* method) ;
+// UnityEngine.Vector3 UnityEngine.Vector3::op_Multiply(System.Single,UnityEngine.Vector3)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline (float ___d0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a1, const RuntimeMethod* method) ;
+// UnityEngine.Vector3 UnityEngine.Vector3::op_Addition(UnityEngine.Vector3,UnityEngine.Vector3)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<UnityEngine.Transform>::.ctor()
 inline void List_1__ctor_mDC3E95DC5C927A867B9B42EDE1945F909B894268 (List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* __this, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1<System.Single>::.ctor()
+inline void List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802 (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918*, const RuntimeMethod*))List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802_gshared)(__this, method);
 }
 // System.Void UnityEngine.MonoBehaviour::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
@@ -2344,15 +2455,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateSpline_Start_m58EAF917214883F0046B
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = V_0;
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_14;
 		L_14 = GameObject_GetComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_m788ADD6C98FD3A1039F72A865AB7D335AEA6116F(L_13, GameObject_GetComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_m788ADD6C98FD3A1039F72A865AB7D335AEA6116F_RuntimeMethod_var);
-		__this->___easeStyle_20 = L_14;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___easeStyle_20), (void*)L_14);
+		__this->___easeStyle_9 = L_14;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___easeStyle_9), (void*)L_14);
 		// calculateSpline();
 		CreateSpline_calculateSpline_m5715E8D245D1BA33AF0753F8EDC2699DFA85E3D0(__this, NULL);
 		// if (drawLine) // Draws a custom line along whatever trajectory the object will follow
-		bool L_15 = __this->___drawLine_9;
+		bool L_15 = __this->___drawLine_24;
 		if (!L_15)
 		{
-			goto IL_00fb;
+			goto IL_00fc;
 		}
 	}
 	{
@@ -2381,7 +2492,7 @@ IL_00c6:
 	{
 		// for (int i = 0; i <= (size - 3) * maxSteps; i++)
 		int32_t L_22 = V_2;
-		int32_t L_23 = __this->___size_6;
+		int32_t L_23 = __this->___size_14;
 		if ((((int32_t)L_22) <= ((int32_t)((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_subtract(L_23, 3)), ((int32_t)100))))))
 		{
 			goto IL_00a5;
@@ -2389,7 +2500,7 @@ IL_00c6:
 	}
 	{
 		// drawLine = false;
-		__this->___drawLine_9 = (bool)0;
+		__this->___drawLine_24 = (bool)0;
 		// Transform[] points2 = new Transform[pointNum];
 		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_24 = (TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24*)(TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24*)SZArrayNew(TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24_il2cpp_TypeInfo_var, (uint32_t)((int32_t)50));
 		V_1 = L_24;
@@ -2404,10 +2515,10 @@ IL_00c6:
 		L_27 = Object_FindObjectOfType_TislineController_t6E443CBA05B5A2B831043A37BB1E6A39F5237435_m1530BF6862EFD28D6E4B632CEDF34E6D14B1B76B(Object_FindObjectOfType_TislineController_t6E443CBA05B5A2B831043A37BB1E6A39F5237435_m1530BF6862EFD28D6E4B632CEDF34E6D14B1B76B_RuntimeMethod_var);
 		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_28 = V_1;
 		lineController_drawLine_mFF691C0F1DA2325F4DD35E692F03364CAA643AE4(L_27, L_28, NULL);
-		return;
+		goto IL_0138;
 	}
 
-IL_00fb:
+IL_00fc:
 	{
 		// GameObject instance = Instantiate(Resources.Load("LineRend", typeof(GameObject))) as GameObject;
 		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_29 = { reinterpret_cast<intptr_t> (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_0_0_0_var) };
@@ -2429,6 +2540,12 @@ IL_00fb:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36;
 		L_36 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_35, NULL);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_33, L_36, NULL);
+	}
+
+IL_0138:
+	{
+		// CalcArchLength();
+		CreateSpline_CalcArchLength_m253046C4BF9676E9DC09D3C38121C7D6E19F1075(__this, NULL);
 		// }
 		return;
 	}
@@ -2526,9 +2643,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateSpline_spawnControlPoints_mC490E62
 IL_0137:
 	{
 		// controlPoints[i] = Instantiate(tempObject, locations[i], Quaternion.identity) as GameObject;
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_23 = __this->___controlPoints_7;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_23 = __this->___controlPoints_15;
 		int32_t L_24 = V_1;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25 = __this->___tempObject_8;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25 = __this->___tempObject_23;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_26 = V_0;
 		int32_t L_27 = V_1;
 		int32_t L_28 = L_27;
@@ -2549,7 +2666,7 @@ IL_015a:
 	{
 		// for (int i = 0; i < size; i++)
 		int32_t L_33 = V_1;
-		int32_t L_34 = __this->___size_6;
+		int32_t L_34 = __this->___size_14;
 		if ((((int32_t)L_33) < ((int32_t)L_34)))
 		{
 			goto IL_0137;
@@ -2594,6 +2711,89 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateSpline_recordPosition_mBE7D01B91B3
 		return;
 	}
 }
+// System.Void CreateSpline::CalcArchLength()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateSpline_CalcArchLength_m253046C4BF9676E9DC09D3C38121C7D6E19F1075 (CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	{
+		// segLength.Add(0f);
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_0 = __this->___segLength_21;
+		List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_inline(L_0, (0.0f), List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_RuntimeMethod_var);
+		// cumulativeLength.Add(0f);
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_1 = __this->___cumulativeLength_20;
+		List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_inline(L_1, (0.0f), List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_RuntimeMethod_var);
+		// for (int i = 1; i < maxSteps * (size - 3); i++)
+		V_0 = 1;
+		goto IL_00b4;
+	}
+
+IL_0027:
+	{
+		// float x = splineCurve[i].x - splineCurve[i-1].x;
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2 = __this->___splineCurve_19;
+		int32_t L_3 = V_0;
+		float L_4 = ((L_2)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3)))->___x_2;
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_5 = __this->___splineCurve_19;
+		int32_t L_6 = V_0;
+		float L_7 = ((L_5)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_6, 1)))))->___x_2;
+		V_1 = ((float)il2cpp_codegen_subtract(L_4, L_7));
+		// float y = splineCurve[i].y - splineCurve[i-1].y;
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_8 = __this->___splineCurve_19;
+		int32_t L_9 = V_0;
+		float L_10 = ((L_8)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_9)))->___y_3;
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_11 = __this->___splineCurve_19;
+		int32_t L_12 = V_0;
+		float L_13 = ((L_11)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_12, 1)))))->___y_3;
+		V_2 = ((float)il2cpp_codegen_subtract(L_10, L_13));
+		// segLength.Add(Mathf.Sqrt((x * x) + (y * y)));
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_14 = __this->___segLength_21;
+		float L_15 = V_1;
+		float L_16 = V_1;
+		float L_17 = V_2;
+		float L_18 = V_2;
+		float L_19;
+		L_19 = sqrtf(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_15, L_16)), ((float)il2cpp_codegen_multiply(L_17, L_18)))));
+		List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_inline(L_14, L_19, List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_RuntimeMethod_var);
+		// cumulativeLength.Add(segLength[i] + cumulativeLength[i - 1]);
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_20 = __this->___cumulativeLength_20;
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_21 = __this->___segLength_21;
+		int32_t L_22 = V_0;
+		float L_23;
+		L_23 = List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50(L_21, L_22, List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_RuntimeMethod_var);
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_24 = __this->___cumulativeLength_20;
+		int32_t L_25 = V_0;
+		float L_26;
+		L_26 = List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50(L_24, ((int32_t)il2cpp_codegen_subtract(L_25, 1)), List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_RuntimeMethod_var);
+		List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_inline(L_20, ((float)il2cpp_codegen_add(L_23, L_26)), List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_RuntimeMethod_var);
+		// for (int i = 1; i < maxSteps * (size - 3); i++)
+		int32_t L_27 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_27, 1));
+	}
+
+IL_00b4:
+	{
+		// for (int i = 1; i < maxSteps * (size - 3); i++)
+		int32_t L_28 = V_0;
+		int32_t L_29 = __this->___size_14;
+		if ((((int32_t)L_28) < ((int32_t)((int32_t)il2cpp_codegen_multiply(((int32_t)100), ((int32_t)il2cpp_codegen_subtract(L_29, 3)))))))
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
 // System.Void CreateSpline::calculateSpline()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateSpline_calculateSpline_m5715E8D245D1BA33AF0753F8EDC2699DFA85E3D0 (CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC* __this, const RuntimeMethod* method) 
 {
@@ -2608,7 +2808,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateSpline_calculateSpline_m5715E8D245
 	float V_2 = 0.0f;
 	{
 		// splineCurve = new Vector3[maxSteps * (size - 3) + 1];
-		int32_t L_0 = __this->___size_6;
+		int32_t L_0 = __this->___size_14;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_1 = (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)SZArrayNew(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var, (uint32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(((int32_t)100), ((int32_t)il2cpp_codegen_subtract(L_0, 3)))), 1)));
 		__this->___splineCurve_19 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___splineCurve_19), (void*)L_1);
@@ -2640,7 +2840,7 @@ IL_0026:
 		float L_6 = V_2;
 		float L_7;
 		L_7 = CreateSpline_B0_mE0F2E87FB97465631222563CFC4D64F4A9F2E670(__this, L_6, NULL);
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_8 = __this->___controlPoints_7;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_8 = __this->___controlPoints_15;
 		int32_t L_9 = V_0;
 		int32_t L_10 = L_9;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
@@ -2652,7 +2852,7 @@ IL_0026:
 		float L_15 = V_2;
 		float L_16;
 		L_16 = CreateSpline_B1_mF58AA2B8D74F6697271AD8289FD44C60840D5F93(__this, L_15, NULL);
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_17 = __this->___controlPoints_7;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_17 = __this->___controlPoints_15;
 		int32_t L_18 = V_0;
 		int32_t L_19 = ((int32_t)il2cpp_codegen_add(L_18, 1));
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = (L_17)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_19));
@@ -2664,7 +2864,7 @@ IL_0026:
 		float L_24 = V_2;
 		float L_25;
 		L_25 = CreateSpline_B2_m9B1678A9D6EF211001BB69C8E94BACC8964D1291(__this, L_24, NULL);
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_26 = __this->___controlPoints_7;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_26 = __this->___controlPoints_15;
 		int32_t L_27 = V_0;
 		int32_t L_28 = ((int32_t)il2cpp_codegen_add(L_27, 2));
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = (L_26)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_28));
@@ -2676,7 +2876,7 @@ IL_0026:
 		float L_33 = V_2;
 		float L_34;
 		L_34 = CreateSpline_B3_mE028C5C5C707D4FEFD514B5B6B947ED6B196EB00(__this, L_33, NULL);
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_35 = __this->___controlPoints_7;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_35 = __this->___controlPoints_15;
 		int32_t L_36 = V_0;
 		int32_t L_37 = ((int32_t)il2cpp_codegen_add(L_36, 3));
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_38 = (L_35)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_37));
@@ -2697,7 +2897,7 @@ IL_0026:
 		float L_45 = V_2;
 		float L_46;
 		L_46 = CreateSpline_B0_mE0F2E87FB97465631222563CFC4D64F4A9F2E670(__this, L_45, NULL);
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_47 = __this->___controlPoints_7;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_47 = __this->___controlPoints_15;
 		int32_t L_48 = V_0;
 		int32_t L_49 = L_48;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_50 = (L_47)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_49));
@@ -2709,7 +2909,7 @@ IL_0026:
 		float L_54 = V_2;
 		float L_55;
 		L_55 = CreateSpline_B1_mF58AA2B8D74F6697271AD8289FD44C60840D5F93(__this, L_54, NULL);
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_56 = __this->___controlPoints_7;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_56 = __this->___controlPoints_15;
 		int32_t L_57 = V_0;
 		int32_t L_58 = ((int32_t)il2cpp_codegen_add(L_57, 1));
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_59 = (L_56)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_58));
@@ -2721,7 +2921,7 @@ IL_0026:
 		float L_63 = V_2;
 		float L_64;
 		L_64 = CreateSpline_B2_m9B1678A9D6EF211001BB69C8E94BACC8964D1291(__this, L_63, NULL);
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_65 = __this->___controlPoints_7;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_65 = __this->___controlPoints_15;
 		int32_t L_66 = V_0;
 		int32_t L_67 = ((int32_t)il2cpp_codegen_add(L_66, 2));
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_68 = (L_65)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_67));
@@ -2733,7 +2933,7 @@ IL_0026:
 		float L_72 = V_2;
 		float L_73;
 		L_73 = CreateSpline_B3_mE028C5C5C707D4FEFD514B5B6B947ED6B196EB00(__this, L_72, NULL);
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_74 = __this->___controlPoints_7;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_74 = __this->___controlPoints_15;
 		int32_t L_75 = V_0;
 		int32_t L_76 = ((int32_t)il2cpp_codegen_add(L_75, 3));
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_77 = (L_74)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_76));
@@ -2754,7 +2954,7 @@ IL_0026:
 		float L_84 = V_2;
 		float L_85;
 		L_85 = CreateSpline_B0_mE0F2E87FB97465631222563CFC4D64F4A9F2E670(__this, L_84, NULL);
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_86 = __this->___controlPoints_7;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_86 = __this->___controlPoints_15;
 		int32_t L_87 = V_0;
 		int32_t L_88 = L_87;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_89 = (L_86)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_88));
@@ -2766,7 +2966,7 @@ IL_0026:
 		float L_93 = V_2;
 		float L_94;
 		L_94 = CreateSpline_B1_mF58AA2B8D74F6697271AD8289FD44C60840D5F93(__this, L_93, NULL);
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_95 = __this->___controlPoints_7;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_95 = __this->___controlPoints_15;
 		int32_t L_96 = V_0;
 		int32_t L_97 = ((int32_t)il2cpp_codegen_add(L_96, 1));
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_98 = (L_95)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_97));
@@ -2778,7 +2978,7 @@ IL_0026:
 		float L_102 = V_2;
 		float L_103;
 		L_103 = CreateSpline_B2_m9B1678A9D6EF211001BB69C8E94BACC8964D1291(__this, L_102, NULL);
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_104 = __this->___controlPoints_7;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_104 = __this->___controlPoints_15;
 		int32_t L_105 = V_0;
 		int32_t L_106 = ((int32_t)il2cpp_codegen_add(L_105, 2));
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_107 = (L_104)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_106));
@@ -2790,7 +2990,7 @@ IL_0026:
 		float L_111 = V_2;
 		float L_112;
 		L_112 = CreateSpline_B3_mE028C5C5C707D4FEFD514B5B6B947ED6B196EB00(__this, L_111, NULL);
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_113 = __this->___controlPoints_7;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_113 = __this->___controlPoints_15;
 		int32_t L_114 = V_0;
 		int32_t L_115 = ((int32_t)il2cpp_codegen_add(L_114, 3));
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_116 = (L_113)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_115));
@@ -2824,7 +3024,7 @@ IL_0210:
 	{
 		// for (int i = 0; i < controlPoints.Length - 3; i++)
 		int32_t L_123 = V_0;
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_124 = __this->___controlPoints_7;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_124 = __this->___controlPoints_15;
 		if ((((int32_t)L_123) < ((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_124)->max_length)), 3)))))
 		{
 			goto IL_001f;
@@ -2887,10 +3087,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CreateSpline_B3_mE028C5C5C707D4FEFD514B
 // System.Void CreateSpline::Update()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateSpline_Update_mDF3BCCAFD8C1EA1FD6B58B4C7EE9E7D5A94756E1 (CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
 	int32_t V_0 = 0;
 	{
 		// if (isLoaded == false)
-		bool L_0 = __this->___isLoaded_10;
+		bool L_0 = __this->___isLoaded_13;
 		if (L_0)
 		{
 			goto IL_001a;
@@ -2898,11 +3105,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateSpline_Update_mDF3BCCAFD8C1EA1FD6B
 	}
 	{
 		// isLoaded = true;
-		__this->___isLoaded_10 = (bool)1;
+		__this->___isLoaded_13 = (bool)1;
 		// startTime = Time.realtimeSinceStartupAsDouble;
 		double L_1;
 		L_1 = Time_get_realtimeSinceStartupAsDouble_m0CACE59E6CF8330D285551AE87951FF6749975B0(NULL);
-		__this->___startTime_11 = L_1;
+		__this->___startTime_12 = L_1;
 	}
 
 IL_001a:
@@ -2910,7 +3117,7 @@ IL_001a:
 		// getInput();
 		CreateSpline_getInput_m81F3BC1EF7795947B2B03FE0E5F9DC8450CFFDB7(__this, NULL);
 		// switch (moveMode)
-		int32_t L_2 = __this->___moveMode_15;
+		int32_t L_2 = __this->___moveMode_8;
 		V_0 = L_2;
 		int32_t L_3 = V_0;
 		switch (((int32_t)il2cpp_codegen_subtract(L_3, 1)))
@@ -2959,6 +3166,29 @@ IL_0053:
 	{
 		// move();
 		CreateSpline_move_mEE6BC457E43E78187EC076A602BEB3A2410E5482(__this, NULL);
+		// if (prevProgress > progress)
+		float L_4 = __this->___prevProgress_11;
+		float L_5 = __this->___progress_10;
+		if ((!(((float)L_4) > ((float)L_5))))
+		{
+			goto IL_0076;
+		}
+	}
+	{
+		// Debug.Log(Time.frameCount);
+		int32_t L_6;
+		L_6 = Time_get_frameCount_m4A42E558A71301A216BDC49EC402D62F19C79667(NULL);
+		int32_t L_7 = L_6;
+		RuntimeObject* L_8 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_7);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_8, NULL);
+	}
+
+IL_0076:
+	{
+		// prevProgress = progress;
+		float L_9 = __this->___progress_10;
+		__this->___prevProgress_11 = L_9;
 		// }
 		return;
 	}
@@ -3018,9 +3248,9 @@ IL_000a:
 IL_0029:
 	{
 		// moveMode = linear;
-		__this->___moveMode_15 = 1;
+		__this->___moveMode_8 = 1;
 		// easeStyle.text = "Linear Movement"; //Creative Feature
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_5 = __this->___easeStyle_20;
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_5 = __this->___easeStyle_9;
 		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_5, _stringLiteralE2724FDF4ED4A1A252453B717BC160A952CBE9C2);
 		// break;
 		goto IL_0072;
@@ -3029,9 +3259,9 @@ IL_0029:
 IL_0042:
 	{
 		// moveMode = sine;
-		__this->___moveMode_15 = 2;
+		__this->___moveMode_8 = 2;
 		// easeStyle.text = "Sinusoidal Ease-in / Ease-out"; //Creative Feature
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_6 = __this->___easeStyle_20;
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_6 = __this->___easeStyle_9;
 		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_6, _stringLiteral7370167FC14C1CB559ECDF038D1FF29F38D63378);
 		// break;
 		goto IL_0072;
@@ -3040,9 +3270,9 @@ IL_0042:
 IL_005b:
 	{
 		// moveMode = parabolic;
-		__this->___moveMode_15 = 3;
+		__this->___moveMode_8 = 3;
 		// easeStyle.text = "Parabolic Ease-in / Ease-out"; //Creative Feature
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_7 = __this->___easeStyle_20;
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_7 = __this->___easeStyle_9;
 		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_7, _stringLiteral50C50BF8182FFC48CF6F9F71D1E70931EE9D448F);
 	}
 
@@ -3072,25 +3302,175 @@ IL_0076:
 // System.Int32 CreateSpline::getFrame()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CreateSpline_getFrame_m532DDD28CA049420EA7707A5273866731599CC7B (CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		// return (int)(progress * (maxSteps * ((float)(size - 3))));
-		float L_0 = __this->___progress_5;
-		int32_t L_1 = __this->___size_6;
-		return il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_multiply(L_0, ((float)il2cpp_codegen_multiply((100.0f), ((float)((int32_t)il2cpp_codegen_subtract(L_1, 3))))))));
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m545762F67009314D9C63DD209B42FFF950569B05_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFCA74A9060DDEE6A3ECAE73E6AB96086770BE7E2);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	int32_t V_1 = 0;
+	{
+		// float curDistance = progress * cumulativeLength[cumulativeLength.Count - 1];
+		float L_0 = __this->___progress_10;
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_1 = __this->___cumulativeLength_20;
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_2 = __this->___cumulativeLength_20;
+		int32_t L_3;
+		L_3 = List_1_get_Count_m545762F67009314D9C63DD209B42FFF950569B05_inline(L_2, List_1_get_Count_m545762F67009314D9C63DD209B42FFF950569B05_RuntimeMethod_var);
+		float L_4;
+		L_4 = List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50(L_1, ((int32_t)il2cpp_codegen_subtract(L_3, 1)), List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_RuntimeMethod_var);
+		V_0 = ((float)il2cpp_codegen_multiply(L_0, L_4));
+		// for (int i = 0; i < maxSteps * (size - 3) + 1; i++)
+		V_1 = 0;
+		goto IL_0096;
+	}
+
+IL_0024:
+	{
+		// if (curDistance == cumulativeLength[i])
+		float L_5 = V_0;
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_6 = __this->___cumulativeLength_20;
+		int32_t L_7 = V_1;
+		float L_8;
+		L_8 = List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50(L_6, L_7, List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_RuntimeMethod_var);
+		if ((!(((float)L_5) == ((float)L_8))))
+		{
+			goto IL_0040;
+		}
+	}
+	{
+		// u = 0f; //extactly matches a point
+		__this->___u_22 = (0.0f);
+		// return i;
+		int32_t L_9 = V_1;
+		return L_9;
+	}
+
+IL_0040:
+	{
+		// }else if (curDistance > cumulativeLength[i] && curDistance < cumulativeLength[i + 1])
+		float L_10 = V_0;
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_11 = __this->___cumulativeLength_20;
+		int32_t L_12 = V_1;
+		float L_13;
+		L_13 = List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50(L_11, L_12, List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_RuntimeMethod_var);
+		if ((!(((float)L_10) > ((float)L_13))))
+		{
+			goto IL_0092;
+		}
+	}
+	{
+		float L_14 = V_0;
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_15 = __this->___cumulativeLength_20;
+		int32_t L_16 = V_1;
+		float L_17;
+		L_17 = List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50(L_15, ((int32_t)il2cpp_codegen_add(L_16, 1)), List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_RuntimeMethod_var);
+		if ((!(((float)L_14) < ((float)L_17))))
+		{
+			goto IL_0092;
+		}
+	}
+	{
+		// u = (curDistance- cumulativeLength[i]) /(cumulativeLength[i+1]- cumulativeLength[i]); //step Distance traveled/total step distance
+		float L_18 = V_0;
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_19 = __this->___cumulativeLength_20;
+		int32_t L_20 = V_1;
+		float L_21;
+		L_21 = List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50(L_19, L_20, List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_RuntimeMethod_var);
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_22 = __this->___cumulativeLength_20;
+		int32_t L_23 = V_1;
+		float L_24;
+		L_24 = List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50(L_22, ((int32_t)il2cpp_codegen_add(L_23, 1)), List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_RuntimeMethod_var);
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_25 = __this->___cumulativeLength_20;
+		int32_t L_26 = V_1;
+		float L_27;
+		L_27 = List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50(L_25, L_26, List_1_get_Item_mFE556F47C4CD09EAC6C898EF39D4A8EC112CFC50_RuntimeMethod_var);
+		__this->___u_22 = ((float)(((float)il2cpp_codegen_subtract(L_18, L_21))/((float)il2cpp_codegen_subtract(L_24, L_27))));
+		// return i;
+		int32_t L_28 = V_1;
+		return L_28;
+	}
+
+IL_0092:
+	{
+		// for (int i = 0; i < maxSteps * (size - 3) + 1; i++)
+		int32_t L_29 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_29, 1));
+	}
+
+IL_0096:
+	{
+		// for (int i = 0; i < maxSteps * (size - 3) + 1; i++)
+		int32_t L_30 = V_1;
+		int32_t L_31 = __this->___size_14;
+		if ((((int32_t)L_30) < ((int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(((int32_t)100), ((int32_t)il2cpp_codegen_subtract(L_31, 3)))), 1)))))
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// Debug.Log("error");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralFCA74A9060DDEE6A3ECAE73E6AB96086770BE7E2, NULL);
+		// return 0;  //This will never happen
+		return 0;
 	}
 }
 // System.Void CreateSpline::move()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateSpline_move_mEE6BC457E43E78187EC076A602BEB3A2410E5482 (CreateSpline_t7D473EED142D4A226B943F0F0BB9A7F14AFD95BC* __this, const RuntimeMethod* method) 
 {
+	int32_t V_0 = 0;
 	{
-		// sphere.position = splineCurve[getFrame()];
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___sphere_4;
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_1 = __this->___splineCurve_19;
-		int32_t L_2;
-		L_2 = CreateSpline_getFrame_m532DDD28CA049420EA7707A5273866731599CC7B(__this, NULL);
-		int32_t L_3 = L_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = (L_1)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_3));
-		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_0, L_4, NULL);
+		// int i = getFrame();
+		int32_t L_0;
+		L_0 = CreateSpline_getFrame_m532DDD28CA049420EA7707A5273866731599CC7B(__this, NULL);
+		V_0 = L_0;
+		// if (u == 0f) //prevents the theoretical core dump that we are on the very last step (no i+1).
+		float L_1 = __this->___u_22;
+		if ((!(((float)L_1) == ((float)(0.0f)))))
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		// sphere.position = splineCurve[i];
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = __this->___sphere_4;
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_3 = __this->___splineCurve_19;
+		int32_t L_4 = V_0;
+		int32_t L_5 = L_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = (L_3)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_5));
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_2, L_6, NULL);
+		// return;
+		return;
+	}
+
+IL_002c:
+	{
+		// sphere.position = splineCurve[i] + (u * (splineCurve[i + 1] - splineCurve[i])); //Last step value + interpolation amount
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7 = __this->___sphere_4;
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_8 = __this->___splineCurve_19;
+		int32_t L_9 = V_0;
+		int32_t L_10 = L_9;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		float L_12 = __this->___u_22;
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_13 = __this->___splineCurve_19;
+		int32_t L_14 = V_0;
+		int32_t L_15 = ((int32_t)il2cpp_codegen_add(L_14, 1));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = (L_13)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_15));
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_17 = __this->___splineCurve_19;
+		int32_t L_18 = V_0;
+		int32_t L_19 = L_18;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = (L_17)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_19));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
+		L_21 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_16, L_20, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
+		L_22 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_12, L_21, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
+		L_23 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_11, L_22, NULL);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_7, L_23, NULL);
 		// }
 		return;
 	}
@@ -3102,8 +3482,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateSpline_linearProgress_mD3461221066
 		// progress = (float)((Time.realtimeSinceStartupAsDouble - startTime) / 5f) % 1f;
 		double L_0;
 		L_0 = Time_get_realtimeSinceStartupAsDouble_m0CACE59E6CF8330D285551AE87951FF6749975B0(NULL);
-		double L_1 = __this->___startTime_11;
-		__this->___progress_5 = (fmodf(((float)((double)(((double)il2cpp_codegen_subtract(L_0, L_1))/(5.0)))), (1.0f)));
+		double L_1 = __this->___startTime_12;
+		__this->___progress_10 = (fmodf(((float)((double)(((double)il2cpp_codegen_subtract(L_0, L_1))/(5.0)))), (1.0f)));
 		// }
 		return;
 	}
@@ -3120,7 +3500,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateSpline_sineProgress_m4F5814D697B41
 		// float t = (float)((Time.realtimeSinceStartupAsDouble - startTime) / 5f) % 1f;
 		double L_0;
 		L_0 = Time_get_realtimeSinceStartupAsDouble_m0CACE59E6CF8330D285551AE87951FF6749975B0(NULL);
-		double L_1 = __this->___startTime_11;
+		double L_1 = __this->___startTime_12;
 		V_0 = (fmodf(((float)((double)(((double)il2cpp_codegen_subtract(L_0, L_1))/(5.0)))), (1.0f)));
 		// float k1 = 1f / 6f;
 		V_1 = (0.166666672f);
@@ -3190,7 +3570,7 @@ IL_00d7:
 		// progress = s / f;
 		float L_25 = V_4;
 		float L_26 = V_3;
-		__this->___progress_5 = ((float)(L_25/L_26));
+		__this->___progress_10 = ((float)(L_25/L_26));
 		// }
 		return;
 	}
@@ -3206,71 +3586,73 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateSpline_parabolicProgress_mA16B4CF0
 		// float t = (float)((Time.realtimeSinceStartupAsDouble - startTime) / 5f) % 1f;
 		double L_0;
 		L_0 = Time_get_realtimeSinceStartupAsDouble_m0CACE59E6CF8330D285551AE87951FF6749975B0(NULL);
-		double L_1 = __this->___startTime_11;
+		double L_1 = __this->___startTime_12;
 		V_0 = (fmodf(((float)((double)(((double)il2cpp_codegen_subtract(L_0, L_1))/(5.0)))), (1.0f)));
 		// float k1 = 1f / 6f;
 		V_1 = (0.166666672f);
 		// float k2 = 5f / 6f;
 		V_2 = (0.833333313f);
-		// float v0 = 2f / (k2 - k1 + 1f);
-		float L_2 = V_2;
-		float L_3 = V_1;
-		V_3 = ((float)((2.0f)/((float)il2cpp_codegen_add(((float)il2cpp_codegen_subtract(L_2, L_3)), (1.0f)))));
+		// float v0 = 1f / ((k1 / 2f) + (k2 - k1) + ((1f - k2) / 2f));
+		float L_2 = V_1;
+		float L_3 = V_2;
+		float L_4 = V_1;
+		float L_5 = V_2;
+		V_3 = ((float)((1.0f)/((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)(L_2/(2.0f))), ((float)il2cpp_codegen_subtract(L_3, L_4)))), ((float)(((float)il2cpp_codegen_subtract((1.0f), L_5))/(2.0f)))))));
 		// if (t < k1)
-		float L_4 = V_0;
-		float L_5 = V_1;
-		if ((!(((float)L_4) < ((float)L_5))))
+		float L_6 = V_0;
+		float L_7 = V_1;
+		if ((!(((float)L_6) < ((float)L_7))))
 		{
-			goto IL_0052;
+			goto IL_0062;
 		}
 	}
 	{
 		// progress = v0 * t * t / (2 * k1);
-		float L_6 = V_3;
-		float L_7 = V_0;
-		float L_8 = V_0;
-		float L_9 = V_1;
-		__this->___progress_5 = ((float)(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_6, L_7)), L_8))/((float)il2cpp_codegen_multiply((2.0f), L_9))));
+		float L_8 = V_3;
+		float L_9 = V_0;
+		float L_10 = V_0;
+		float L_11 = V_1;
+		__this->___progress_10 = ((float)(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_8, L_9)), L_10))/((float)il2cpp_codegen_multiply((2.0f), L_11))));
 		return;
 	}
 
-IL_0052:
+IL_0062:
 	{
 		// else if (t < k2)
-		float L_10 = V_0;
-		float L_11 = V_2;
-		if ((!(((float)L_10) < ((float)L_11))))
+		float L_12 = V_0;
+		float L_13 = V_2;
+		if ((!(((float)L_12) < ((float)L_13))))
 		{
-			goto IL_006c;
+			goto IL_007c;
 		}
 	}
 	{
 		// progress = (v0 * k1 / 2f) + (v0 * (t - k1));
-		float L_12 = V_3;
-		float L_13 = V_1;
 		float L_14 = V_3;
-		float L_15 = V_0;
-		float L_16 = V_1;
-		__this->___progress_5 = ((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_multiply(L_12, L_13))/(2.0f))), ((float)il2cpp_codegen_multiply(L_14, ((float)il2cpp_codegen_subtract(L_15, L_16))))));
+		float L_15 = V_1;
+		float L_16 = V_3;
+		float L_17 = V_0;
+		float L_18 = V_1;
+		__this->___progress_10 = ((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_multiply(L_14, L_15))/(2.0f))), ((float)il2cpp_codegen_multiply(L_16, ((float)il2cpp_codegen_subtract(L_17, L_18))))));
 		return;
 	}
 
-IL_006c:
+IL_007c:
 	{
 		// progress = (v0 * k1 / 2f) + (v0 * (k2 - k1)) + ((v0 - ((v0 * (t - k2) / (1f - k2)) / 2f)) * (t - k2));
-		float L_17 = V_3;
-		float L_18 = V_1;
 		float L_19 = V_3;
-		float L_20 = V_2;
-		float L_21 = V_1;
-		float L_22 = V_3;
-		float L_23 = V_3;
-		float L_24 = V_0;
-		float L_25 = V_2;
-		float L_26 = V_2;
-		float L_27 = V_0;
+		float L_20 = V_1;
+		float L_21 = V_3;
+		float L_22 = V_2;
+		float L_23 = V_1;
+		float L_24 = V_3;
+		float L_25 = V_3;
+		float L_26 = V_0;
+		float L_27 = V_2;
 		float L_28 = V_2;
-		__this->___progress_5 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_multiply(L_17, L_18))/(2.0f))), ((float)il2cpp_codegen_multiply(L_19, ((float)il2cpp_codegen_subtract(L_20, L_21)))))), ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_22, ((float)(((float)(((float)il2cpp_codegen_multiply(L_23, ((float)il2cpp_codegen_subtract(L_24, L_25))))/((float)il2cpp_codegen_subtract((1.0f), L_26))))/(2.0f))))), ((float)il2cpp_codegen_subtract(L_27, L_28))))));
+		float L_29 = V_0;
+		float L_30 = V_2;
+		__this->___progress_10 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_multiply(L_19, L_20))/(2.0f))), ((float)il2cpp_codegen_multiply(L_21, ((float)il2cpp_codegen_subtract(L_22, L_23)))))), ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_24, ((float)(((float)(((float)il2cpp_codegen_multiply(L_25, ((float)il2cpp_codegen_subtract(L_26, L_27))))/((float)il2cpp_codegen_subtract((1.0f), L_28))))/(2.0f))))), ((float)il2cpp_codegen_subtract(L_29, L_30))))));
 		// }
 		return;
 	}
@@ -3282,26 +3664,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateSpline__ctor_m127DE90F8C6A9026DE81
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mDC3E95DC5C927A867B9B42EDE1945F909B894268_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// private int size = 11;
-		__this->___size_6 = ((int32_t)11);
+		// private int moveMode = 1;       //Dictates which type of movement we use
+		__this->___moveMode_8 = 1;
+		// private int size = 11;      //The number of control points we will spawn in
+		__this->___size_14 = ((int32_t)11);
 		// GameObject[] controlPoints = new GameObject[11];
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = (GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF*)(GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF*)SZArrayNew(GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF_il2cpp_TypeInfo_var, (uint32_t)((int32_t)11));
-		__this->___controlPoints_7 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___controlPoints_7), (void*)L_0);
-		// private bool drawLine = true;
-		__this->___drawLine_9 = (bool)1;
-		// private int moveMode = 1;
-		__this->___moveMode_15 = 1;
+		__this->___controlPoints_15 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___controlPoints_15), (void*)L_0);
 		// public List<Transform> points = new List<Transform>();
 		List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* L_1 = (List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D*)il2cpp_codegen_object_new(List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D_il2cpp_TypeInfo_var);
 		List_1__ctor_mDC3E95DC5C927A867B9B42EDE1945F909B894268(L_1, List_1__ctor_mDC3E95DC5C927A867B9B42EDE1945F909B894268_RuntimeMethod_var);
 		__this->___points_16 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___points_16), (void*)L_1);
+		// public List<float> cumulativeLength = new List<float>();
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_2 = (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918*)il2cpp_codegen_object_new(List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918_il2cpp_TypeInfo_var);
+		List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802(L_2, List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802_RuntimeMethod_var);
+		__this->___cumulativeLength_20 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___cumulativeLength_20), (void*)L_2);
+		// public List<float> segLength = new List<float>();
+		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_3 = (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918*)il2cpp_codegen_object_new(List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918_il2cpp_TypeInfo_var);
+		List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802(L_3, List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802_RuntimeMethod_var);
+		__this->___segLength_21 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___segLength_21), (void*)L_3);
+		// private bool drawLine = true;
+		__this->___drawLine_24 = (bool)1;
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
@@ -3428,6 +3822,93 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D
 		return L_0;
 	}
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___a0;
+		float L_1 = L_0.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___b1;
+		float L_3 = L_2.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___a0;
+		float L_5 = L_4.___y_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___b1;
+		float L_7 = L_6.___y_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___a0;
+		float L_9 = L_8.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___b1;
+		float L_11 = L_10.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		memset((&L_12), 0, sizeof(L_12));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_12), ((float)il2cpp_codegen_subtract(L_1, L_3)), ((float)il2cpp_codegen_subtract(L_5, L_7)), ((float)il2cpp_codegen_subtract(L_9, L_11)), /*hidden argument*/NULL);
+		V_0 = L_12;
+		goto IL_0030;
+	}
+
+IL_0030:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = V_0;
+		return L_13;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline (float ___d0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a1, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___a1;
+		float L_1 = L_0.___x_2;
+		float L_2 = ___d0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___a1;
+		float L_4 = L_3.___y_3;
+		float L_5 = ___d0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___a1;
+		float L_7 = L_6.___z_4;
+		float L_8 = ___d0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		memset((&L_9), 0, sizeof(L_9));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_9), ((float)il2cpp_codegen_multiply(L_1, L_2)), ((float)il2cpp_codegen_multiply(L_4, L_5)), ((float)il2cpp_codegen_multiply(L_7, L_8)), /*hidden argument*/NULL);
+		V_0 = L_9;
+		goto IL_0021;
+	}
+
+IL_0021:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = V_0;
+		return L_10;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___a0;
+		float L_1 = L_0.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___b1;
+		float L_3 = L_2.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___a0;
+		float L_5 = L_4.___y_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___b1;
+		float L_7 = L_6.___y_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___a0;
+		float L_9 = L_8.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___b1;
+		float L_11 = L_10.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		memset((&L_12), 0, sizeof(L_12));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_12), ((float)il2cpp_codegen_add(L_1, L_3)), ((float)il2cpp_codegen_add(L_5, L_7)), ((float)il2cpp_codegen_add(L_9, L_11)), /*hidden argument*/NULL);
+		V_0 = L_12;
+		goto IL_0030;
+	}
+
+IL_0030:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = V_0;
+		return L_13;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) 
 {
 	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* V_0 = NULL;
@@ -3461,5 +3942,47 @@ IL_0034:
 		RuntimeObject* L_9 = ___item0;
 		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_gshared_inline (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, float ___item0, const RuntimeMethod* method) 
+{
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		int32_t L_0 = (int32_t)__this->____version_3;
+		__this->____version_3 = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)__this->____items_1;
+		V_0 = L_1;
+		int32_t L_2 = (int32_t)__this->____size_2;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_4 = V_0;
+		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		int32_t L_5 = V_1;
+		__this->____size_2 = ((int32_t)il2cpp_codegen_add(L_5, 1));
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_6 = V_0;
+		int32_t L_7 = V_1;
+		float L_8 = ___item0;
+		(L_6)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(L_7), (float)L_8);
+		return;
+	}
+
+IL_0034:
+	{
+		float L_9 = ___item0;
+		((  void (*) (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918*, float, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m545762F67009314D9C63DD209B42FFF950569B05_gshared_inline (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = (int32_t)__this->____size_2;
+		return L_0;
 	}
 }
